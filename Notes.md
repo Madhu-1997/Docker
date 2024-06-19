@@ -25,7 +25,7 @@ A Docker image is an executable package of software that includes everything nee
 
 Docker Containers are running instances of Docker images. We can think of it as a virtual environment that bundles application code with all the dependencies required to run the application, so you don’t need to rely on what’s installed on the host.
 
-<<<<<<< HEAD
+
 ## Here are some basic Docker commands to get you started:
 
 ```sh
@@ -34,3 +34,33 @@ docker build -t <image_name>:V1 <path_to_Dockerfile>
 
 #docker images: List all available images on the system.
 docker images
+
+#docker ps: List running containers.
+docker ps
+
+#docker ps -a: List all containers, including stopped ones.
+docker ps -a
+
+#docker pull: Download an image from a container registry (e.g., Docker Hub).
+docker pull <image_name>
+
+#docker stop: Stop a running container.
+docker stop <container_id/container_name>
+
+#docker start: Start a stopped container.
+docker start <container_id/container_name>
+
+#docker rm: Remove a stopped container.
+docker rm <container_id/container_name>
+
+# docker rmi: Remove an image.
+docker rmi <image_name> or docker image rm <image Id>
+
+##docker exec: Run a command inside a running container.
+docker exec -it <container_id/container_name> bash
+
+#docker inspect: prints container details
+docker inspect <container_id>
+```
+
+
