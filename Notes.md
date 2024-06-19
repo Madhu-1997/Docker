@@ -51,7 +51,10 @@ docker stop <container_id/container_name>
 docker start <container_id/container_name>
 
 #docker rm: Remove a stopped container.
-docker rm <container_id/container_name>
+docker rm <container_id/container_name> or docker container prune -f <to remove all stopped containers>
+
+## Note:
+Before delete the image we should first stop the container and remove the container and then remove the image
 
 # docker rmi: Remove an image.
 docker rmi <image_name> or docker image rm <image Id>
