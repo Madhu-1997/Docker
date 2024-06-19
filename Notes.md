@@ -24,3 +24,7 @@ A Docker image is an executable package of software that includes everything nee
 ## Docker Containers
 
 Docker Containers are running instances of Docker images. We can think of it as a virtual environment that bundles application code with all the dependencies required to run the application, so you don’t need to rely on what’s installed on the host.
+
+# docker build: Build a Docker image from a Dockerfile.
+
+docker build -t <image_name>:V1 <path_to_Dockerfile>
