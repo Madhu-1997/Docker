@@ -34,3 +34,11 @@ docker build -t <image_name>:V1 <path_to_Dockerfile>
     ```sh
     sudo apt-get update
     ```
+**docker build: Build a Docker image from a Dockerfile**:
+```sh
+docker build -t <image_name>:V1 <path_to_Dockerfile>
+```
+
+```sh
+# Update the package list
+sudo apt-get update
